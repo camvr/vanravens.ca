@@ -8,7 +8,12 @@ Vue.use(Vuetify)
 
 export default (ctx) => {
   const vuetify = new Vuetify({
+    customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
+      options: {
+        customProperties: true
+      },
       dark: true,
       themes: {
         dark: {
